@@ -1,6 +1,6 @@
 package com.mulesoft.training;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 import org.mule.api.MuleEvent;
@@ -22,7 +22,8 @@ public class HelloMavenTest extends FunctionalTestCase {
     
     @Override
     protected String getConfigFile() {
-        return "maven-project.xml";
+        return "maven-proj.xml";
     }
 
 }
+
