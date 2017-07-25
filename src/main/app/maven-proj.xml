@@ -30,7 +30,7 @@ http://www.mulesoft.org/schema/mule/json http://www.mulesoft.org/schema/mule/jso
     </flow>
     <flow name="logFlights">
         <jms:inbound-endpoint doc:name="JMS" connector-ref="Active_MQ" topic="entries"/>
-        <logger level="INFO" doc:name="Logger" message="Entries XXXX .. #[message.payload]"/>
+        <logger level="INFO" doc:name="Logger" message="Entries .. #[message.payload]"/>
     </flow>
     <flow name="logFlight2">
         <jms:inbound-endpoint topic="updates" connector-ref="Active_MQ" doc:name="JMS"/>
